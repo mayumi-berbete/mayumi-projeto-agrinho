@@ -1,0 +1,128 @@
+/* Configurações Gerais - Tema Natureza */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f7f4; /* Fundo verde bem claro */
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #27ae60; /* Verde folha principal */
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 5px solid #1e8449;
+}
+
+.logo-area {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-style: italic;
+    opacity: 0.9;
+    margin-top: 0.3rem;
+}
+
+/* Conteúdo Principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.15);
+    max-width: 550px;
+    text-align: center;
+    border-top: 4px solid #d35400; /* Detalhe em tom terra/laranja */
+}
+
+.card h2 {
+    color: #1e8449;
+    margin-bottom: 1.2rem;
+}
+
+.card p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Botão Sustentável */
+button {
+    background-color: #d35400; /* Tom terra/abóbora para contraste */
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #b3391b;
+    transform: translateY(-2px);
+}
+
+/* Caixa Informativa Revelada */
+.hidden {
+    display: none;
+}
+
+#mensagem-oculta {
+    margin-top: 2rem;
+    background-color: #e8f8f5;
+    border-left: 5px solid #2ecc71;
+    padding: 1.2rem;
+    border-radius: 4px;
+    text-align: left;
+    animation: surgir 0.4s ease-out;
+}
+
+#mensagem-oculta h3 {
+    color: #117a65;
+    margin-bottom: 0.5rem;
+}
+
+#mensagem-oculta p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+@keyframes surgir {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Rodapé */
+footer {
+    background-color: #196f3d;
+    color: #e2f4e9;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
